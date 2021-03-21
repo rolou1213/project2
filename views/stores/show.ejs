@@ -1,0 +1,35 @@
+
+
+<section id="show-page">
+  <div>Name: </div>
+  <div><%= store.id %></div>
+  <div>Name: </div>
+  <div><%= store.name %></div>
+  <div>Phone: </div>
+  <div><%= store.phone %></div>
+  <div>Email </div>
+  <div><%= store.email %></div>
+  <div>Address </div>
+  <div><%= address.email %></div>
+  <div>Now Showing: </div>
+  <div><%= movie.nowShowing ? 'Yes' : 'Nope' %></div>
+</section>
+
+<br><br><h2>Reviews</h2>
+<form id="add-review-form" method="POST"
+  action="/stores/<%= store._id %>/reviews">
+  <label>Review:</label>
+  <textarea name="content"></textarea>
+  <label>Rating:</label>
+  <select name="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <input type="submit" value="Add Review">
+</form>
+
+
+

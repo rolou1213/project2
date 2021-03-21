@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% contactus.forEach(function(m) { %>
+    Thank you for contacting us. You provided the following information. Name: <%= m.name %> Email: <%= m.email %> Your message: <%= m.message %>
+  </body>
+</html>
